@@ -47,9 +47,44 @@
 			</div>
 		</div>
 		<div class="form-group">
+			<label class="col-sm-3 control-label">Preffered name</label>
+			<div class="col-sm-9">
+				<input class="form-control" type="text" name="preffered-name">
+			</div>
+		</div>
+		<div class="form-group">
 			<label class="col-sm-3 control-label">Street address</label>
 			<div class="col-sm-9">
 				<input class="form-control" type="text" name="street">
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="col-sm-3 control-label">What tech devices do you own? (check all that apply)</label>
+			<div class="col-sm-9">
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" name="tech_iphone" value="iPhone">
+						iPhone
+					</label>
+				</div>
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" name="tech_android" value="Android phone">
+						Android phone
+					</label>
+				</div>
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" name="tech_mac" value="Mac">
+						Mac
+					</label>
+				</div>
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" name="tech_pc" value="PC">
+						PC
+					</label>
+				</div>
 			</div>
 		</div>
 		<div class="form-group">
@@ -159,6 +194,23 @@
 				</div>
 			</div>
 		</div>
+		<div class="form-group">
+			<label class="col-sm-12 control-label">If yes, choose your brand of car</label>
+			<div class="col-sm-offset-1 col-sm-11">
+				<select class="form-control" name="car-brand">
+					<option value="" selected="true">Choose a car brand</option>
+					<option value="Fiat">Fiat</option>
+					<option value="Honda">Honda</option>
+					<option value="Toyota">Toyota</option>
+					<option value="Ford">Ford</option>
+					<option value="Chevy">Chevy</option>
+					<option value="Nisaan">Nisaan</option>
+					<option value="Lexus">Lexus</option>
+					<option value="Acura">Acura</option>
+					<option value="Other">Other</option>
+				</select>
+			</div>
+		</div>
 		<div class="form-group row">
 			<label class="col-sm-12 control-label">What type of position are you seeking? (check all that apply)</label>
 			<div class="col-sm-offset-1 col-sm-11">
@@ -238,6 +290,10 @@
 		<div class="form-group">
 			<label class="control-label">Describe a recent project</label>
 			<textarea class="form-control" name="project" rows="6"></textarea>
+		</div>
+		<div class="form-group">
+			<label class="control-label">What is your greatest strength? Greatest weakness?</label>
+			<textarea class="form-control" name="strength-weakness" rows="6"></textarea>
 		</div>
 	</fieldset>
 
